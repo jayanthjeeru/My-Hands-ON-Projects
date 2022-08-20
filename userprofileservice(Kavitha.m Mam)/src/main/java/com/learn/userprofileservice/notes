@@ -1,0 +1,15 @@
+Swagger
+-------
+- helps to document the API
+- provides client UI for interacting with the API
+- follows open API specification
+
+Testing of Repository/Dao layer
+-------------------------------
+
+Testing of service layer
+--------------------------
+Mockito
+- create mock objects
+- configure method responses from the mock object
+
