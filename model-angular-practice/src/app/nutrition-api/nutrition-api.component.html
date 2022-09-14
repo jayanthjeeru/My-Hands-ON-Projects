@@ -1,0 +1,62 @@
+<div class="back">
+<br>
+<br>
+<br>
+
+<div >
+    <div class="text-center">
+        <input type="text" #data> 
+        <button (click)="search(data.value)">Go</button>
+    </div>
+    
+       
+    
+</div>
+<br>
+<br>
+<br>
+				<img src="" alt="">					
+<table class="table table-striped table-hover opacity-100" *ngIf="output" >
+    <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Serving Size</th>
+          <th scope="col">Calories</th>
+          <th scope="col">Total Fat</th>
+          <th scope="col">Saturated Fat</th>
+          <th scope="col">Cholesterol</th>
+          <th scope="col">Sodium</th>
+          <th scope="col">Carbohydrates</th>
+          <th scope="col">Fiber</th>
+          <th scope="col">Sugar</th>
+          <th scope="col">Protein</th>
+
+        </tr>
+      </thead>
+      <tbody >
+        <tr *ngFor="let i of output; let x = index">
+          
+
+          <td>{{x+1}}</td>
+          <td>{{i.name}}</td>
+          <td>{{i.serving_size_g}}</td>
+          <td>{{i.calories}}</td>
+          <td>{{i.fat_total_g}}</td>
+          <td>{{i.fat_saturated_g}}</td>
+          <td>{{i.cholesterol_mg}}</td>
+          <td>{{i.sodium_mg}}</td>
+          <td>{{i.carbohydrates_total_g}}</td>
+          <td>{{i.fiber_g}}</td>
+          <td>{{i.sugar_g}}</td>
+          <td>{{i.protein_g}}</td>
+          
+        </tr>
+    
+      
+        
+      </tbody>
+
+
+</table>
+</div>

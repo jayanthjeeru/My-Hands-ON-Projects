@@ -1,0 +1,31 @@
+
+
+<div [ngStyle]="{'margin-left':'50%'}">
+
+    <h1>Add User</h1>
+    
+      <input type="text" #username placeholder="username">
+      <br>
+      <input type="text" #email placeholder="email">
+      <br>
+      <input type="text" #password placeholder="password">
+      <br>
+    
+      <button (click)="add(username.value,email.value,password.value)">submit</button>
+    
+    
+    
+    
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    
+    <h1>Display All Users</h1>
+    
+    <div *ngFor="let i of users">
+    
+      {{i | json}}
+    
+    </div>

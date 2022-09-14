@@ -1,0 +1,18 @@
+
+<form class="container-fluid justify-content-center">
+<input type="text" #searchval>
+<button (click)="search(searchval.value)" class="btn  btn-sm btn-secondary">search</button>
+</form>
+
+<div *ngFor="let i of articles">
+
+    
+    <h1> {{i.title}}</h1>
+     <br>
+     <p>{{i.description}}</p>
+     <br>
+     <img [src]="i.urlToImage" alt="no" width="400px">
+     <br>
+ {{i.content}}
+ <a [href]="i.url">read more</a>
+ </div>

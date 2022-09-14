@@ -1,0 +1,6 @@
+<h1>search user by id</h1>
+<input type="text" placeholder="enter id" #id>
+<button (click)="search(id.value)">search</button>
+
+<div *ngIf="isVisible">{{user | json}}</div>
+

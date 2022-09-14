@@ -1,0 +1,9 @@
+<h1>delete user</h1>
+
+
+<div *ngFor="let i of users">
+    
+    {{i | json}}|<button (click)="delete(i.id)">delete</button>
+
+  
+  </div>

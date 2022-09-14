@@ -1,0 +1,13 @@
+
+<h1>add student</h1>
+<input type="number" [(ngModel)]="student.id" placeholder="id">
+<input type="text" [(ngModel)]="student.name" placeholder="name">
+<input type="number" [(ngModel)]="student.age" placeholder="age">
+<input type="text" [(ngModel)]="student.division" placeholder="division">
+<input type="number" [(ngModel)]="student.sem" placeholder="sem">
+<input type="number" [(ngModel)]="student.marks" placeholder="marks">
+<button (click)="addStudent()">Add</button>
+
+<div *ngFor="let i of Students">
+    {{i|json}} <button (click)="deleteStudent(i.name)">delete</button>
+</div>
