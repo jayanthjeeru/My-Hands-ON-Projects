@@ -31,10 +31,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public Employee getEmployeeById(int id) throws UserNotFoundException {
 		
-		if(!employeeDao.existsById(id)) {
+		if(!employeeDao.findById(id).isPresent()) {
 			
-			throw new UserNotFoundException();
-			
+//			throw new UserNotFoundException();
+			return null;
+				
 		}
 		
 		return employeeDao.findById(id).get();
@@ -63,6 +64,13 @@ public class EmployeeServiceImpl implements EmployeeService {
 	public List<Employee> getAllEmployessByRatingLessThan3AndItDept() {
 		
 		return employeeDao.findAllEmployessByRatingLessThan3AndItDept();
+	}
+
+	@Override
+	public void deleteEmployeeById(int id) {
+	
+		employeeDao.deleteById(id);
+		
 	}
 
 }

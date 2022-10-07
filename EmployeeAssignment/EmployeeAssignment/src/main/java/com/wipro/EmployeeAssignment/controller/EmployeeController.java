@@ -37,6 +37,19 @@ public class EmployeeController {
 		return new ResponseEntity<String>(employeeService.deleteEmployee(employee),HttpStatus.GONE);
 	}
 	
+	@DeleteMapping("deleteemployeebyid/{id}")
+	public ResponseEntity<String> deleteEmployeeById(@PathVariable("id") int id) throws UserNotFoundException {
+		
+		Employee o= employeeService.getEmployeeById(id);
+		if(o!=null) {
+			employeeService.deleteEmployeeById(id);
+		return new ResponseEntity<String>("Deleted",HttpStatus.GONE);
+		}
+		
+		//throw new UserNotFoundException();
+		return new ResponseEntity<String>("not found",HttpStatus.NOT_FOUND);
+	}
+	
 	@GetMapping("getallemployee")
 	public ResponseEntity<List<Employee>> getAllEmployee() {
 		

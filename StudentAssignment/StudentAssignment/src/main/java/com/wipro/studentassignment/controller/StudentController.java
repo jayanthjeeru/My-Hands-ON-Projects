@@ -53,12 +53,13 @@ public class StudentController {
 	@DeleteMapping("byname/{name}")
 	public ResponseEntity<Student> deleteByStudentName(@PathVariable String name){
 		
-		System.out.println(name);
+		//System.out.println(name);
 		Student ds=new Student();
 		
 		for(Student i:s){
-			if(i.getName()==name) {
-				System.out.println(i.getName()==name);
+			//System.out.println(i.getName()==name);
+			if(i.getName().equals(name)) {
+				
 				ds=i;
 				s.remove(ds);
 				return new ResponseEntity<Student>(ds,HttpStatus.CREATED);

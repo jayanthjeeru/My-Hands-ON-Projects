@@ -15,6 +15,7 @@ import { NewsApiSearchComponent } from './news-api-search/news-api-search.compon
 import { NutritionApiComponent } from './nutrition-api/nutrition-api.component';
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 import { StudentApiComponent } from './student-api/student-api.component';
+import { PlayerApiComponent } from './player-api/player-api.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { StudentApiComponent } from './student-api/student-api.component';
     NewsApiSearchComponent,
     NutritionApiComponent,
     ReactiveFormsComponent,
-    StudentApiComponent
+    StudentApiComponent,
+    PlayerApiComponent
   ],
   imports: [
     BrowserModule,

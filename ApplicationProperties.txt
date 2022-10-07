@@ -20,3 +20,27 @@ spring.jpa.hibernate.ddl-auto=validate
 #spring.datasource.url=jdbc:h2:mem:testdb
 
 -------------------------------------------------------
+
+---------------------------------MongoDB properties
+
+server.port=1234
+spring.data.mongodb.database=wiprocc
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port=27017
+
+-------------------------------------------------------
+
+**************Default Serup of microServices***********
+
+--------------------------------Eureka Server properties
+
+server.port=8761 #default eureka port
+eureka.client.register-with-eureka=false
+eureka.client.fetch-registry=false
+
+---------------------------------------------------------
+
+-------------------------------Eureka Client properties
+
+spring.application.name=product
+

@@ -22,4 +22,6 @@ public interface EmployeeService {
 	public String deleteEmployee(Employee employee) throws UserNotFoundException;
 	
 	public List<Employee> getAllEmployessByRatingLessThan3AndItDept();
+	
+	public void deleteEmployeeById(int id);
 }
