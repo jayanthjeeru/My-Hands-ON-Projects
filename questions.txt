@@ -1,0 +1,63 @@
+
+html:
+-----
+1)html 5 featutes
+2)html4 vs html5
+3)
+
+
+css:
+---
+1)position : relative,fixed.....
+2)class vs id
+3)z-index
+
+
+
+java script:
+-----------
+
+1.difference b/w == and ===;
+
+2.what is window.onload and document.ready function
+ans)window.onload(one by one) , document.ready(load lightweight elements first)
+
+3.
+
+angular:
+-------
+1.data binding and type of bindings(one way and two way binding)
+
+2.what is component
+
+3.what is observeble
+
+4.what is promise
+
+
+java:
+
+1.opps
+2.collections
+2.1.itterator
+2.2 comparable and comparator
+3.exception handling
+4.java 8 features
+a)
+Some of the important Java 8 features are;
+
+forEach() method in Iterable interface
+default and static methods in Interfaces
+Functional Interfaces and Lambda Expressions
+Java Stream API for Bulk Data Operations on Collections
+Java Time API
+Collection API improvements
+Concurrency API improvements
+Java IO improvements
+
+
+spring
+
+1.component scan
+2.difference @component,@service,@Repo......
+
